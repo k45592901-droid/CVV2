@@ -1,14 +1,8 @@
 using System;
 using System.Windows.Forms;
-
 namespace PersianScreenTranslator;
-
 internal static class Program
 {
     [STAThread]
-    static void Main()
-    {
-        ApplicationConfiguration.Initialize();
-        Application.Run(new MainForm());
-    }
+    static void Main() { ApplicationConfiguration.Initialize(); Application.Run(new MainForm()); }
 }
